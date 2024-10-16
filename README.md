@@ -1,6 +1,6 @@
 # YOLO-SGF
 YOLO-SGF: Lightweight network for object detection in complex infrared images based on improved YOLOv8
-## 使用了ultralytics架构
+### 使用了ultralytics架构
  [YOLOv8 文档](https://docs.ultralytics.com) 上有关训练、验证、预测和部署的完整文档。
 
 <details open>
@@ -32,9 +32,8 @@ YOLOv8 可以在命令行界面（CLI）中直接使用，只需输入 `yolo` �
 
 YOLOv8 也可以在 Python 环境中直接使用，并接受与上述 CLI 示例中相同的[参数](https://docs.ultralytics.com/usage/cfg/)：
 
-<summary>Usage</summary>
 
-## Train
+## YOLO-SGF--Train
 
 YOLO-SGF  训练使用train_detect.py进行python运行
 
