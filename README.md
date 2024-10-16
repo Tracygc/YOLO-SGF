@@ -32,7 +32,7 @@ YOLOv8 可以在命令行界面（CLI）中直接使用，只需输入 `yolo` �
 
 YOLOv8 也可以在 Python 环境中直接使用，并接受与上述 CLI 示例中相同的[参数](https://docs.ultralytics.com/usage/cfg/)：
 
-### train
+## Train
 
 YOLO-SGF  训练使用train_detect.py进行python运行
 
