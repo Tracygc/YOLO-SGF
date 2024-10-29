@@ -122,9 +122,12 @@ class TaskAlignedAssigner(nn.Module):
 
     def iou_calculation(self, gt_bboxes, pd_bboxes):
         """IoU calculation for horizontal bounding boxes."""
-        return bbox_iou(gt_bboxes, pd_bboxes, x1y1x2y2=False, CIoU=True).squeeze(-1).clamp_(0)
-
+        # return bbox_iou(gt_bboxes, pd_bboxes, x1y1x2y2=False, CIoU=True).squeeze(-1).clamp_(0)
         # return probiou(gt_bboxes, pd_bboxes).squeeze(-1).clamp_(0)
+
+        # 如果想要使用inner就设置inner为True，train用了这里也记得改
+        return bbox_iou(gt_bboxes, pd_bboxes, x1y1x2y2=False, Inner=True, MPDIoU=True).squeeze(-1).clamp_(0)
+
 
     def select_topk_candidates(self, metrics, largest=True, topk_mask=None):
         """
