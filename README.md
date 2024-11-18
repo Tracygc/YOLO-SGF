@@ -45,13 +45,13 @@ YOLO-SGF模型架构见cfg/models/yoloSGF.yaml
 loss的修改见utils/loss.py的BboxLoss里面的 bbox_iou函数修改
 
 ### 引用 cite
-@article{GUO2024105539,  
-title = {YOLO-SGF: Lightweight network for object detection in complex infrared images based on improved YOLOv8},  
-journal = {Infrared Physics & Technology}, 
-volume = {142}, 
-pages = {105539}, 
-year = {2024}, 
-issn = {1350-4495}, 
-doi = {https://doi.org/10.1016/j.infrared.2024.105539}, 
-author = {Cong Guo and Kan Ren and Qian Chen}, 
+@article{GUO2024105539,   
+title = {YOLO-SGF: Lightweight network for object detection in complex infrared images based on improved YOLOv8},    
+journal = {Infrared Physics & Technology},   
+volume = {142},   
+pages = {105539},   
+year = {2024},   
+issn = {1350-4495},   
+doi = {https://doi.org/10.1016/j.infrared.2024.105539},   
+author = {Cong Guo and Kan Ren and Qian Chen},   
 }
