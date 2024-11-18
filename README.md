@@ -1,5 +1,6 @@
 # YOLO-SGF
 YOLO-SGF: Lightweight network for object detection in complex infrared images based on improved YOLOv8
+PAPER: https://www.sciencedirect.com/science/article/pii/S1350449524004237
 ### 使用了ultralytics架构
  [YOLOv8 文档](https://docs.ultralytics.com) 上有关训练、验证、预测和部署的完整文档。
 
@@ -40,3 +41,15 @@ YOLO-SGF  训练使用train_detect.py进行python运行
 YOLO-SGF模型架构见cfg/models/yoloSGF.yaml
 
 loss的修改见utils/loss.py的BboxLoss里面的 bbox_iou函数修改
+
+### 引用 cite
+@article{GUO2024105539,
+title = {YOLO-SGF: Lightweight network for object detection in complex infrared images based on improved YOLOv8},
+journal = {Infrared Physics & Technology},
+volume = {142},
+pages = {105539},
+year = {2024},
+issn = {1350-4495},
+doi = {https://doi.org/10.1016/j.infrared.2024.105539},
+author = {Cong Guo and Kan Ren and Qian Chen},
+}
