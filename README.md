@@ -4,6 +4,7 @@ YOLO-SGF: Lightweight network for object detection in complex infrared images ba
 PAPER: https://www.sciencedirect.com/science/article/pii/S1350449524004237
 
 ### 使用了ultralytics架构
+
  [YOLOv8 文档](https://docs.ultralytics.com) 上有关训练、验证、预测和部署的完整文档。
 
 <details open>
@@ -26,25 +27,29 @@ pip install ultralytics
 <details open>
 <summary>Usage</summary>
 
+ 
 ### CLI
-
+```
 YOLOv8 可以在命令行界面（CLI）中直接使用，只需输入 `yolo` 命令：
 `yolo` 可用于各种任务和模式，并接受其他参数，例如 `imgsz=640`。查看 YOLOv8 [CLI 文档](https://docs.ultralytics.com/usage/cli)以获取示例。
+```
 
 ### Python
-
+```
 YOLOv8 也可以在 Python 环境中直接使用，并接受与上述 CLI 示例中相同的[参数](https://docs.ultralytics.com/usage/cfg/)：
-
+```
 
 ## YOLO-SGF--Train
-
+```
 YOLO-SGF  训练使用train_detect.py进行python运行
 
 YOLO-SGF模型架构见cfg/models/yoloSGF.yaml
 
 loss的修改见utils/loss.py的BboxLoss里面的 bbox_iou函数修改
+```
 
 ### 引用 cite
+```
 @article{GUO2024105539,   
 title = {YOLO-SGF: Lightweight network for object detection in complex infrared images based on improved YOLOv8},    
 journal = {Infrared Physics & Technology},   
@@ -55,3 +60,4 @@ issn = {1350-4495},
 doi = {https://doi.org/10.1016/j.infrared.2024.105539},   
 author = {Cong Guo and Kan Ren and Qian Chen},   
 }
+```
